@@ -6,8 +6,9 @@
                     {{ .Content }}
                 </h1>
                 <div class="flex gap-12 mx-8 mb-8">
-                    {{ partial "partials/Atom-btn.html" (dict "content" "關於我們" "url" "/about") . }}
-                    {{ partial "partials/Atom-btn.html" (dict "content" "觀看作品" "url" "/project") . }}
+                    {{ partial "partials/Atom-btn.html" (dict "content" "關於" "url" "/about") . }}
+                    {{ partial "partials/Atom-btn.html" (dict "content" "作品" "url" "/project") . }}
+                    {{ partial "partials/Atom-btn.html" (dict "content" "文章" "url" "/post") . }}
                 </div>
             </div>
 
