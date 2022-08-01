@@ -1,8 +1,8 @@
 <nav
-    class="fixed bottom-0 top-auto z-30 flex items-center justify-between w-full ml-auto border-t border-b lg:border-t-0 navbarMainHeight lg:bottom-auto lg:top-0 bg-stone-50"
+    class="fixed bottom-0 top-auto z-30 flex items-center justify-between w-full ml-auto border-t border-t-primary-100 lg:border-t-0 navbarMainHeight lg:bottom-auto lg:top-0 bg-primary-50"
 >
-    <div class="flex items-center w-1/2 h-full border-stone-200">
-        <a href="/" class="p-0 ml-4 md:p-4">
+    <div class="flex items-center w-1/2 h-full px-8 border-primary-200">
+        <a href="/" class="">
             <h2 class="">
                 <!-- Logo -->
                 <!-- <img src="" alt="SiteLogo - Small" /> -->
@@ -10,8 +10,8 @@
                 <!-- Logomark -->
                 <!-- <img src="" alt="SiteLogo - Large" /> -->
 
-                <span class="text-2xl font-bold">
-                    {{ .Site.Params.brand }}
+                <span class="text-2xl font-bold tracking-widest">
+                    {{ .Site.Params.brandtc }}
                 </span>
             </h2>
         </a>
@@ -19,7 +19,7 @@
 
     <ul
         id="navlistMain"
-        class="left-0 flex w-full mr-px lg:w-1/2 border-stone-200"
+        class="left-0 flex w-full mr-px lg:w-1/2 border-primary-200"
     >
         {{ $currentPage := . }}
         {{ range .Site.Menus.main }}
@@ -31,7 +31,7 @@
             "
             >
                 <a
-                    class="inline-block w-full p-4 text-center border-l text-stone-600 border-stone-200 hover:bg-stone-100
+                    class="inline-block w-full p-4 text-center border-l text-primary-600 border-primary-200 hover:bg-primary-100
                     {{ if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }}
                         navbarMain--active
                     {{ end }}

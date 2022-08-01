@@ -1,6 +1,8 @@
 {{ define "main" }}
     <div class="grid grid-auto lg:grid-cols-2">
-        <div class="border-r bg-stone-100 lg:bg-stone-50 border-stone-200">
+        <div
+            class="border-r bg-primary-100 lg:bg-primary-50 border-primary-200"
+        >
             <h1 class="p-8 text-2xl leading-relaxed prose text-current">
                 {{ $defaultContent := (print "搜尋" .Title ) }}
                 {{ .Content | default $defaultContent }}

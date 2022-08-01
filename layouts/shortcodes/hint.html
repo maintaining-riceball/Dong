@@ -38,9 +38,13 @@
         </blockquote>
         <figcaption>
             <cite class="transition-opacity opacity-60 hover:opacity-100">
-                <a href="{{ with $citeSrc }}{{ . }}{{ end }}"
-                    >From —— {{ with $cite }}{{ . }}{{ end }}</a
-                >
+                {{ if $citeSrc }}
+                    <a href="{{ with $citeSrc }}{{ . }}{{ end }}"
+                        >From —— {{ with $cite }}{{ . }}{{ end }}</a
+                    >
+                {{ else }}
+                    <span>{{ $cite }}</span>
+                {{ end }}
             </cite>
         </figcaption>
     </figure>

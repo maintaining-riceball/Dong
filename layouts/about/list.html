@@ -1,6 +1,6 @@
 {{ define "main" }}
     <div class="grid grid-auto lg:grid-cols-2">
-        <div class="border-r border-stone-200">
+        <div class="border-r border-primary-200">
             <div class="p-8">
                 <h1 class="text-2xl leading-relaxed prose">
                     <div class="gsap-heading">
@@ -38,7 +38,7 @@
         <div class="w-full">
             {{ range .Params.infos }}
                 <section>
-                    <h2 class="p-8 py-4 bg-stone-100 gsap-list">
+                    <h2 class="p-8 py-4 bg-primary-100 gsap-list">
                         <svg
                             class="inline-block mr-4 md:hidden"
                             xmlns="http://www.w3.org/2000/svg"
@@ -53,7 +53,7 @@
                         {{ .title }}
                     </h2>
                     <div class="py-8 prose gsap-list">
-                        <p>{{ .content }}</p>
+                        <p>{{ .content | safeHTML }}</p>
                     </div>
                 </section>
             {{ end }}
@@ -62,7 +62,7 @@
             <!-- Contact -->
             <section>
                 <h2 class=" gsap-list">
-                    <a class="block p-8 py-4 bg-stone-100" href="/post">
+                    <a class="block p-8 py-4 bg-primary-100" href="/post">
                         <svg
                             class="inline-block mr-4 md:hidden"
                             xmlns="http://www.w3.org/2000/svg"
@@ -73,7 +73,7 @@
                                 d="M10 12.812 5 7.812 6.229 6.583 10 10.354 13.771 6.583 15 7.812Z"
                             />
                         </svg>
-                        聯絡我們
+                        聯絡
                     </a>
                 </h2>
                 <div class="grid grid-cols-1 md:grid-cols-2">

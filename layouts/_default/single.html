@@ -18,12 +18,12 @@
 
             <!-- Article Metas -->
             <div
-                class="flex items-center py-0 border-t border-b lg:justify-between gsap-heading border-stone-200"
+                class="flex items-center py-0 border-t border-b lg:justify-between gsap-heading border-primary-200"
             >
                 <!-- Client -->
                 {{ if .Params.client }}
                     <div
-                        class="px-8 py-4 pr-8 border-0 lg:border-r border-stone-200"
+                        class="px-8 py-4 pr-8 border-0 lg:border-r border-primary-200"
                     >
                         {{ .Params.client }}
                     </div>
@@ -32,9 +32,9 @@
                 {{ with .Params.author }}
                     {{ range . }}
                         <div
-                            class="flex items-center gap-4 px-8 pr-8 border-r border-stone-200 whitespace-nowrap"
+                            class="flex items-center gap-4 px-8 pr-8 border-r border-primary-200 whitespace-nowrap"
                         >
-                            <div class="flex rounded-full bg-stone-300" width="50" hieght="50">
+                            <div class="flex rounded-full bg-primary-300" width="50" hieght="50">
 
                             
                             {{ with .image }}
@@ -75,7 +75,7 @@
                 {{ end }}
 
 
-                <div class="px-8 text-left border-l lg:text-right border-stone-200">
+                <div class="px-8 text-left border-l lg:text-right border-primary-200">
                     <!-- Time -->
                     {{ if .Params.date }}
                         <time>
@@ -158,15 +158,15 @@
         </div>
 
         <!-- Right content -->
-        <div class="pb-8 border-0 lg:border-l">
-            <div class="p-8 hidden leading-relaxed border-b border-stone-200 min-h-[10rem] md:flex justify-start items-center">
+        <div class="pb-8 -ml-px border-0 lg:border-l border-primary-200">
+            <div class="p-8 hidden leading-relaxed border-b border-primary-200 min-h-[10rem] md:flex justify-start items-center">
                 <h2 class="text-2xl leading-snug tracking-wide">
                     {{ .Params.description | safeHTML }}
                 </h2>
             </div>
 
             <div
-                class="pb-8 prose prose-stone prose-h2:top-0 lg:prose-h2:top-14 border-stone-200 max-w-none"
+                class="pb-8 prose prose-primary prose-h2:top-0 lg:prose-h2:top-14 border-primary-200 max-w-none"
             >
                 {{ if .Params.toc }}
                 {{ .TableOfContents }}
@@ -176,7 +176,7 @@
             </div>
 
             {{ if .Params.credit }}
-                <div class="p-8 leading-relaxed border-t border-stone-200">
+                <div class="p-8 leading-relaxed border-t border-primary-200">
                     <div class="mt-8">
                         {{ range .Params.credit }}
                             {{ .title }}

@@ -1,6 +1,6 @@
 {{ define "main" }}
     <div class="grid grid-auto lg:grid-cols-2">
-        <div class="border-r border-stone-200">
+        <div class="border-r border-primary-200">
             <h1 class="p-8 text-2xl leading-relaxed prose">{{ .Content }}</h1>
             <div class="flex gap-12 mx-8 mb-8">
                 {{ partial "partials/Atom-btn.html" (dict "content" "Youtube 頻道" "url" $.Site.Params.brandYoutube) . }}
