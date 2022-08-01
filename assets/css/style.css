@@ -1313,6 +1313,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(174 181 149 / var(--tw-bg-opacity));
 }
 
+.bg-primary-800 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(92 88 68 / var(--tw-bg-opacity));
+}
+
 .p-8 {
   padding: 2rem;
 }
@@ -1430,6 +1435,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 2.25rem;
 }
 
+.text-7xl {
+  font-size: 4.5rem;
+  line-height: 1;
+}
+
+.text-6xl {
+  font-size: 3.75rem;
+  line-height: 1;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -1470,6 +1485,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-primary-900 {
   --tw-text-opacity: 1;
   color: rgb(77 74 58 / var(--tw-text-opacity));
+}
+
+.text-primary-800 {
+  --tw-text-opacity: 1;
+  color: rgb(92 88 68 / var(--tw-text-opacity));
 }
 
 .underline {
