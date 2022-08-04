@@ -23,6 +23,12 @@ brandBehance = 'https://www.behance.net/triangledongdong2020'
 slogan = "專業的角度有趣地玩設計"
 brandDescription = "創立於2020年，三角東東 Triangle Dong Dong 是一個專注於品牌設計的新創設計公司。 "
 
+utteranceRepo = "riceball-tw/Dong"
+utteranceIssueTerm = "pathname"
+utteranceLabel = "💬"
+utteranceTheme = "github-light"
+
+
 
 testimg = 'https://ucarecdn.com/16d84bf3-b31e-4a87-a82a-566364a85030/'
 

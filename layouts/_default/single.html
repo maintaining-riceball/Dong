@@ -90,8 +90,7 @@
                             {{ if .Params.category }}
                                 <a class="after:content-['-']" href="/category/{{ .Params.category }}">
                                     {{ .Params.category }}
-                                </a>
-                                
+                                </a> 
                             {{ end }}
 
 
@@ -172,8 +171,8 @@
                 {{ .TableOfContents }}
                 {{ end }}
                 {{ .Content }}
-
             </div>
+            {{ partial "partials/Function-utteranc" . }}
 
             {{ if .Params.credit }}
                 <div class="p-8 leading-relaxed border-t border-primary-200">
