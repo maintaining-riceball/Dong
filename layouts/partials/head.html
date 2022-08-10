@@ -122,17 +122,15 @@
 {{ $js := $global }}    <script defer type="module" src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}"></script>
 
 <!-- Analytics -->
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script
+<!-- Global site tag (gtag.js) - Google Analytics --><script
     async
-    src="https://www.googletagmanager.com/gtag/js?id=G-FS2XJ14995"
-></script>
-<script>
+    src="https://www.googletagmanager.com/gtag/js?id={{ .Site.Params.googleAnalytics }}"
+></script><script>
     window.dataLayer = window.dataLayer || []
     function gtag() {
         dataLayer.push(arguments)
     }
     gtag('js', new Date())
 
-    gtag('config', 'G-FS2XJ14995')
+    gtag('config', '{{ .Site.Params.googleAnalytics }}')
 </script>
